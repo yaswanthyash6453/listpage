@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+/* Header Styles */
+header {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Main Section Styles */
+main {
+    width: 100%;
+    max-width: 600px;
+}
+
+.task-list {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Task Styles */
+#tasks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-size: 16px;
+}
+
+.task:last-child {
+    border-bottom: none;
+}
+
+.task .content {
+    flex: 1;
+}
+
+.task .content input {
+    border: none;
+    background: none;
+    font-size: 16px;
+    color: #333;
+}
+
+.task .actions {
+    display: flex;
+    gap: 10px;
+}
+
+button.edit, button.delete {
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+button.edit {
+    color: #007bff;
+}
+
+button.edit:hover {
+    color: #0056b3;
+}
+
+button.delete {
+    color: #dc3545;
+}
+
+button.delete:hover {
+    color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form {
+        flex-direction: column;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
